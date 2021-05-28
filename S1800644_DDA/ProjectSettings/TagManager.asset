@@ -6,6 +6,12 @@ TagManager:
   tags:
   - Collider
   - Ground
+  - Spawn
+  - Coin
+  - Object
+  - Heart
+  - PowerUp
+  - Star
   layers:
   - Default
   - TransparentFX

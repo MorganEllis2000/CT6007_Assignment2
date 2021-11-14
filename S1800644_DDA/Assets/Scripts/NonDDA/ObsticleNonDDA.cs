@@ -26,7 +26,7 @@ public class ObsticleNonDDA : MonoBehaviour
     void Update()
     {
         // this is responsible for roating the heart and moving it towards the player
-        if (gameObject.tag == "Heart")
+        if (gameObject.tag == "Heart" || gameObject.tag == "Coin")
         {
             gameObject.transform.rotation = Quaternion.Euler(-90.0f, 0f, 0f);
             transform.Translate(Vector3.up * fMoveSpeed * Time.deltaTime);
@@ -42,8 +42,8 @@ public class ObsticleNonDDA : MonoBehaviour
         // if the obsticle doesn't collide with the player that the speed goes up by one and so does the score
         if (other.CompareTag("Collider"))
         {
-            playerController.fMoveSpeed += 1f;
-            playerController.iPlayerScore += 1;
+            playerController.fMoveSpeed++;
+            playerController.iPlayerScore++;
             Destroy(gameObject);
         }
         else if (other.CompareTag("Object"))

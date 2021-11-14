@@ -28,9 +28,13 @@ public class StatisticTracker : MonoBehaviour
 
     public int iPlayerHealth = 5; // stores the player health
 
-	private void Start()
-	{
+    private void Awake() {
         iPlayerHealth = 5; // sets the players health to 5
+    }
+
+    private void Start()
+	{
+        
     }
 
 	private void Update()

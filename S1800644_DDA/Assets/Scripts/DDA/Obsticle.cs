@@ -36,7 +36,7 @@ public class Obsticle : MonoBehaviour
 	void Update()
     {
 		// this is responsible for roating the heart and moving it towards the player
-		if (gameObject.tag == "Heart")
+		if (gameObject.tag == "Heart" || gameObject.tag == "Coin")
 		{
 			gameObject.transform.rotation = Quaternion.Euler(-90.0f, 0f, 0f);
 			transform.Translate(Vector3.up * fObsticleMoveSpeed * Time.deltaTime);

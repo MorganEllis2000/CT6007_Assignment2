@@ -16,14 +16,13 @@ public class ObjectSpawner : MonoBehaviour
     public float fCooldownTimer = 1.75f; // determines the ammount between object spawns
     private int iNumOfSpawns; // int that tracks the number of spawns needed
 
-    StatisticTracker statisticTracker;
-    // Start is called before the first frame update
+    [SerializeField]StatisticTracker statisticTracker;
+
     void Start()
     {
         statisticTracker = GameObject.Find("StatisticTracker").GetComponent<StatisticTracker>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         fCooldownTimer -= Time.deltaTime;// starts the countdown of the spawn

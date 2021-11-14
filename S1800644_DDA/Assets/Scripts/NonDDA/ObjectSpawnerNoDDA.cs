@@ -13,6 +13,7 @@ public class ObjectSpawnerNoDDA : MonoBehaviour
 {
     public GameObject[] go_aSpawnableObjects; // game object array of the different spawnable objects
     public Transform[] tf_aSpawnPoints; // transform array of the spawn points
+    public PlayerController playerController; // Gets the controller script 
 
     public float fTimeBtwSpawn = 3f; // determines the ammount between object spawns
 
@@ -40,6 +41,7 @@ public class ObjectSpawnerNoDDA : MonoBehaviour
                 Debug.Log("Spawn");
                 freeSpawnPoints.RemoveAt(iRandSpawnPoint); // removes this from the spawn location list
                 Instantiate(go_aSpawnableObjects[iRandSpawnObject], spawnLocation.position, Quaternion.identity); // instantiate the object
+ 
             }
             fTimeBtwSpawn = 3f; // reset the timer
         }

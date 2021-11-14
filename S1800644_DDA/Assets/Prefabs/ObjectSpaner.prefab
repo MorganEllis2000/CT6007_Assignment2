@@ -55,7 +55,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2158134239435094597}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalPosition: {x: 0, y: 0, z: 16.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2158134241282321113}
@@ -81,7 +81,7 @@ MonoBehaviour:
   go_aSpawnableObjects:
   - {fileID: 4044357195425151899, guid: e022cd641185fc945aa8916889a2d6bf, type: 3}
   - {fileID: 4448833695615766237, guid: b2d8b002a4e59a647b747fe327394af6, type: 3}
-  - {fileID: 2922564376403590014, guid: b4248ce52c2cf8e42a660beef3440327, type: 3}
+  - {fileID: 5660200743408864896, guid: d494896bdb972fc4a851a1f0fbd6d1da, type: 3}
   - {fileID: 5864897830914987642, guid: 62f4b3c4cc50179429bdf854cd106dfe, type: 3}
   - {fileID: 8705012170935592973, guid: 94524c8b4ea48d24ebfa707b7c20b787, type: 3}
   tf_aSpawnPoints:
@@ -90,6 +90,8 @@ MonoBehaviour:
   - {fileID: 2158134239815348433}
   - {fileID: 2158134239486899841}
   - {fileID: 2158134239241513091}
+  fCooldownTimer: 1.75
+  statisticTracker: {fileID: 0}
 --- !u!1 &2158134239486899842
 GameObject:
   m_ObjectHideFlags: 0
